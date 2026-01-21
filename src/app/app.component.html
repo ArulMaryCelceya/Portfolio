@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arul Mary Celceya | Cloud & DevOps Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .card-simple { background: #0f172a; border: 1px solid #1e293b; transition: all 0.3s ease; }
+        .card-simple:hover { border-color: #38bdf8; transform: translateY(-4px); }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation { animation: float 5s ease-in-out infinite; }
+        
+        .glow-overlay {
+            background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white tracking-tight">Celceya<span class="text-sky-500">.</span></h1>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                <li><a href="#experience" class="hover:text-white transition-colors">Experience</a></li>
+                <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 absolute w-full left-0 top-full">
+            <ul class="flex flex-col space-y-4 px-6 py-6 text-sm">
+                <li><a href="#home" class="mobile-link block hover:text-white">Home</a></li>
+                <li><a href="#about" class="mobile-link block hover:text-white">About</a></li>
+                <li><a href="#experience" class="mobile-link block hover:text-white">Experience</a></li>
+                <li><a href="#projects" class="mobile-link block hover:text-white">Projects</a></li>
+                <li><a href="#contact" class="mobile-link block hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO (CENTERED) -->
+    <section id="home" class="min-h-screen flex items-center pt-24 pb-12 relative overflow-hidden">
+        <div class="glow-overlay absolute inset-0 pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <p class="text-sky-500 font-mono text-sm mb-4 tracking-widest uppercase font-semibold">Cloud & DevOps Aspirant</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+                Arul Mary Celceya
+            </h1>
+            <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Passionate about Cloud Architecture and Infrastructure Management. Actively learning DevOps tools to build scalable, automated solutions.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-lg font-semibold transition shadow-xl shadow-sky-600/20">
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION -->
+    <section id="about" class="py-24 bg-slate-900/30">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-2xl font-bold text-white mb-12 flex items-center gap-4">
+                <span class="text-sky-500 font-mono text-lg font-normal">01.</span> About & Education <span class="h-[1px] bg-slate-800 grow"></span>
+            </h2>
+
+            <div class="grid lg:grid-cols-3 gap-6">
+                <!-- Education Timeline -->
+                <div class="card-simple p-8 rounded-xl lg:col-span-2">
+                    <h3 class="text-white font-bold mb-8 flex items-center gap-3">
+                        <svg class="w-5 h-5 text-sky-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        Academic Journey
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 border-l-2 border-slate-800 pl-6 relative">
+                            <div class="absolute w-3 h-3 bg-sky-500 rounded-full -left-[7.5px] top-1.5"></div>
+                            <div>
+                                <p class="text-slate-100 font-semibold text-lg leading-tight">MSc Computer Science</p>
+                                <p class="text-sm text-slate-400 mt-1 italic">Kristu Jayanti (Deemed to be University), Bengaluru</p>
+                            </div>
+                            <span class="text-sky-500 text-xs font-mono font-bold whitespace-nowrap bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">2024 — 2026</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 border-l-2 border-slate-800 pl-6 relative">
+                            <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7.5px] top-1.5"></div>
+                            <div>
+                                <p class="text-slate-100 font-semibold text-lg leading-tight">Bachelor of Computer Applications (BCA)</p>
+                                <p class="text-sm text-slate-400 mt-1 italic">Kristu Jayanti College, Autonomous</p>
+                            </div>
+                            <span class="text-slate-500 text-xs font-mono whitespace-nowrap bg-slate-800 px-3 py-1 rounded-full border border-slate-700">2021 — 2024</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 border-l-2 border-slate-800 pl-6 relative">
+                            <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7.5px] top-1.5"></div>
+                            <div>
+                                <p class="text-slate-100 font-semibold text-lg leading-tight">Class XII (CEBA)</p>
+                                <p class="text-sm text-slate-400 mt-1 italic">St Mary's PU College, Bengaluru</p>
+                            </div>
+                            <span class="text-slate-500 text-xs font-mono whitespace-nowrap bg-slate-800 px-3 py-1 rounded-full">2020 — 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card-simple p-8 rounded-xl">
+                    <h3 class="text-white font-bold mb-8 flex items-center gap-3">
+                        <svg class="w-5 h-5 text-sky-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+                        Certifications
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="group/cert">
+                            <span class="text-[10px] text-sky-500 font-bold uppercase tracking-widest block mb-1">IBM Cognitive Classes</span>
+                            <span class="text-sm text-slate-200 font-medium group-hover/cert:text-sky-400 transition-colors">Cloud Essentials (2026)</span>
+                        </li>
+                        <li class="group/cert">
+                            <span class="text-[10px] text-sky-500 font-bold uppercase tracking-widest block mb-1">IBM Cognitive Classes</span>
+                            <span class="text-sm text-slate-200 font-medium group-hover/cert:text-sky-400 transition-colors">Introduction to Cloud (2025)</span>
+                        </li>
+                        <li class="group/cert">
+                            <span class="text-[10px] text-sky-500 font-bold uppercase tracking-widest block mb-1">Google</span>
+                            <span class="text-sm text-slate-200 font-medium group-hover/cert:text-sky-400 transition-colors">Cyber Security (2024)</span>
+                        </li>
+                        <li class="group/cert">
+                            <span class="text-[10px] text-sky-500 font-bold uppercase tracking-widest block mb-1">IBM Cognitive Classes</span>
+                            <span class="text-sm text-slate-200 font-medium group-hover/cert:text-sky-400 transition-colors">Db2 on Cloud (2025)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-2xl font-bold text-white mb-12 flex items-center gap-4">
+                <span class="text-sky-500 font-mono text-lg font-normal">02.</span> Experience <span class="h-[1px] bg-slate-800 grow"></span>
+            </h2>
+
+            <div class="space-y-12 max-w-4xl">
+                <!-- Internship 2 -->
+                <div class="border-l-2 border-sky-500 pl-8 relative pb-4">
+                    <div class="absolute w-4 h-4 bg-slate-950 border-2 border-sky-500 rounded-full -left-[9px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-white">Frontend Intern</h3>
+                        <span class="text-sky-500 text-sm font-mono font-bold">June 2025 — July 2025</span>
+                    </div>
+                    <p class="text-slate-300 font-medium mb-4 flex items-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m6 0v1a3 3 0 0 0 6 0V7M4 21V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17"></path></svg>
+                        Software Development Cell, Kristu Jayanti University
+                    </p>
+                    <ul class="text-slate-400 text-sm space-y-3">
+                        <li class="flex gap-2"><span>•</span> Developed responsive UI components for the <strong>GearGo logistics</strong> project.</li>
+                        <li class="flex gap-2"><span>•</span> Worked with the <strong>Angular</strong> framework for dynamic frontend development.</li>
+                        <li class="flex gap-2"><span>•</span> Collaborated with the backend team on API integration for seamless data flow.</li>
+                    </ul>
+                </div>
+
+                <!-- Internship 1 -->
+                <div class="border-l-2 border-slate-800 pl-8 relative pb-4">
+                    <div class="absolute w-4 h-4 bg-slate-950 border-2 border-sky-500 rounded-full -left-[9px] top-1.5"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-white">Software Intern</h3>
+                        <span class="text-slate-500 text-sm font-mono">June 2024 — July 2024</span>
+                    </div>
+                    <p class="text-slate-300 font-medium mb-4 flex items-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m6 0v1a3 3 0 0 0 6 0V7M4 21V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17"></path></svg>
+                        Velozion Technologies PVT LTD
+                    </p>
+                    <ul class="text-slate-400 text-sm space-y-3">
+                        <li class="flex gap-2"><span>•</span> Developed basic web pages using <strong>HTML, CSS, and JavaScript</strong>.</li>
+                        <li class="flex gap-2"><span>•</span> Supported the team in building simple, user-friendly interfaces for client projects.</li>
+                        <li class="flex gap-2"><span>•</span> Assisted in testing and improving website layout and overall performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24 bg-slate-900/30">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-center text-white text-2xl font-bold mb-16 uppercase tracking-widest">Technical Arsenal</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="card-simple p-8 rounded-2xl text-center group">
+                    <div class="w-14 h-14 bg-sky-500/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <p class="text-white font-bold mb-2 text-lg">Web Technologies</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium uppercase tracking-tight">HTML5 • CSS3 • Tailwind CSS • Angular</p>
+                </div>
+                <div class="card-simple p-8 rounded-2xl text-center group">
+                    <div class="w-14 h-14 bg-sky-500/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    </div>
+                    <p class="text-white font-bold mb-2 text-lg">Cloud & Version Control</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium uppercase tracking-tight">Cloud Computing (Basics) • Git • GitHub</p>
+                </div>
+                <div class="card-simple p-8 rounded-2xl text-center group sm:col-span-2 md:col-span-1">
+                    <div class="w-14 h-14 bg-sky-500/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <p class="text-white font-bold mb-2 text-lg">Cyber Security</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium uppercase tracking-tight">Information Security Basics • Android Basics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-2xl font-bold text-white mb-12 flex items-center gap-4">
+                <span class="text-sky-500 font-mono text-lg font-normal">03.</span> Projects <span class="h-[1px] bg-slate-800 grow"></span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- GearGo -->
+                <div class="group p-8 bg-slate-900/50 border border-slate-800 rounded-3xl hover:border-sky-500 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-500">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </div>
+                        <a href="https://github.com/ArulMaryCelceya" target="_blank" class="text-slate-500 hover:text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">GearGo Logistics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Built responsive UI components using HTML, TailwindCSS, and Angular. Improved user experience and worked with backend integration for real-time logistics tracking.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-sky-500 uppercase">
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Angular</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Tailwind CSS</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Logistics</span>
+                    </div>
+                </div>
+
+                <!-- Oreil Cafe -->
+                <div class="group p-8 bg-slate-900/50 border border-slate-800 rounded-3xl hover:border-sky-500 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-500">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">Oreil Cafe Management</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">A user-friendly web interface for managing cafe operations, including menu handling, billing, and order tracking. Focus on smooth UI/UX.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-sky-500 uppercase">
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Web App</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Billing System</span>
+                    </div>
+                </div>
+
+                <!-- Android App -->
+                <div class="group p-8 bg-slate-900/50 border border-slate-800 rounded-3xl hover:border-sky-500 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-500">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">Leave & Notice Board</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Android application developed using Kotlin and XML. Designed for managing student leave requests and digital notice boards with intuitive navigation.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-sky-500 uppercase">
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Android</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Kotlin</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">XML</span>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="group p-8 bg-slate-900/50 border border-slate-800 rounded-3xl hover:border-sky-500 transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-500">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-3">Professional Portfolio</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Personal branding website designed with modern UI standards. Focused on accessibility, performance, and responsive layout.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-sky-500 uppercase">
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Design</span>
+                        <span class="bg-sky-500/10 px-2 py-1 rounded">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="py-24 border-t border-slate-900 bg-slate-950">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6 tracking-tight">Let's Connect</h2>
+            <p class="mb-12 text-slate-400 max-lg mx-auto leading-relaxed">I'm currently looking for new opportunities in the Cloud & DevOps space. Feel free to reach out via email or LinkedIn!</p>
+            
+            <div class="flex flex-col items-center gap-8">
+                <a href="mailto:celceyajoackim@gmail.com" class="group flex flex-col items-center gap-3">
+                    <span class="text-xs text-sky-500 font-bold uppercase tracking-[0.3em] group-hover:text-white transition-colors">Direct Email</span>
+                    <span class="text-xl md:text-2xl text-white font-bold group-hover:text-sky-500 transition-colors underline underline-offset-8 decoration-1 decoration-slate-800 group-hover:decoration-sky-500/50">
+                        celceyajoackim@gmail.com
+                    </span>
+                </a>
+                
+                <div class="flex flex-col items-center gap-2">
+                    <span class="text-xs text-slate-500 font-mono uppercase tracking-widest">Phone Support</span>
+                    <span class="text-slate-200 font-medium">+91 7019855456</span>
+                </div>
+                
+                <div class="flex gap-10 mt-6">
+                    <a href="https://www.linkedin.com/in/celceyajoackim/" target="_blank" class="text-slate-400 hover:text-sky-500 transition-all transform hover:scale-110" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/ArulMaryCelceya" target="_blank" class="text-slate-400 hover:text-white transition-all transform hover:scale-110" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+                
+                <p class="text-slate-600 text-[10px] mt-24 uppercase tracking-[0.4em] font-medium">
+                    &copy; 2026 Arul Mary Celceya &bull; Bengaluru
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) mobileMenu.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
